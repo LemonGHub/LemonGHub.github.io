@@ -301,7 +301,22 @@
 
       
         
-          <p>Web基础知识</p>
+          <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><ul>
+<li><p>浏览器访问网页原理</p>
+<ul>
+<li>当我们利用浏览器访问网页时，其实是有真实的物理文件传输，浏览器会先将网页上的内容缓存到本地文件夹中，然后再渲染出来呈现给用户看。</li>
+<li>平时我们在上网时会发现第二次访问比第一次访问快，这是因为第一次访问已经将这个网页上的内容缓存到了本地。</li>
+</ul>
+</li>
+<li><p>浏览器请求数据过程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用户端--&gt;服务器: 发送“请求报文”</span><br><span class="line">服务器--&gt;用户端: 发送“响应报文”</span><br></pre></td></tr></table></figure>
+<ul>
+<li>请求报文<ul>
+<li>请求行+请求头+空行+请求体</li>
+</ul>
+</li>
+<li>响应报文<ul>
+<li>响应行+响应头+响应体
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/16/Web编程技术/#more" rel="contents">
