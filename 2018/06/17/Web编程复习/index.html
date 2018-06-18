@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b26213959e04.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b2621395b222.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b26213949178.jpg">
-<meta property="og:updated_time" content="2018-06-18T01:03:06.761Z">
+<meta property="og:updated_time" content="2018-06-18T01:52:48.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web编程技术期末复习">
 <meta name="twitter:description" content="jdbc与jsp全称 jdbc 全称为 Java Database Connectivity jsp 全称为 Java Server Pages, Java服务端网页  Web服务器端开发技术 CGI、PHP、ASP、JSP  常用Web服务器 IIS、Apache、Tomcat、BEA WebLogic、JRun、Jboss服务器、IBM公司的WebSphere服务器">
@@ -313,7 +313,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-18T09:03:06+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-18T09:52:48+08:00">
                 2018-06-18
               </time>
             
@@ -363,7 +363,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,116
+                  1,213
                 </span>
               
 
@@ -470,12 +470,23 @@
 <h1 id="param操作"><a href="#param操作" class="headerlink" title="param操作"></a>param操作</h1><ul>
 <li><strong>功能：为其他标签提供附加信息。</strong></li>
 <li><strong>语法：&lt;jsp:param name=”参数名字” value=”参数的值”/&gt;</strong></li>
-<li><strong>注意：该标签必须配合&lt; jsp:include &gt;、&lt; jsp:forward &gt;、&lt; jsp:plugin &gt;动作标签一起使用。当与&lt; jsp: include &gt;标签一起使用时，可以将param组件中的参数值传递到include指令要包含的文件中去。</strong> </li>
+<li><strong>注意：该标签必须配合&lt; jsp:include &gt;、&lt; jsp:forward &gt;、<del>&lt; jsp:plugin &gt;</del>动作标签一起使用。当与&lt; jsp: include &gt;标签一起使用时，可以将param组件中的参数值传递到include指令要包含的文件中去。</strong> </li>
 </ul>
 <h1 id="JDBC-应用程序接口"><a href="#JDBC-应用程序接口" class="headerlink" title="JDBC 应用程序接口"></a>JDBC 应用程序接口</h1><ul>
+<li><strong>书本P113</strong><ul>
 <li><strong>java.sql.DriverManager：处理驱动的调入并且对产生新的数据库连接提供支持。</strong></li>
 <li><strong>java.sql.Connection：代表对特定数据库的连接。</strong></li>
-<li><strong>java.sql.Statement：代表一个特定的容器，对一个特定的数据库执行SQL语句</strong></li>
+<li><strong>java.sql.Statement：代表一个特定的容器，对一个特定的数据库执行SQL语句。</strong></li>
+<li><strong>java.sql.ResultSet：控制对一个特定语句的行数据的存储。</strong><ul>
+<li><strong>课件模块3第7章</strong></li>
+<li><strong>DriverManager类：依据数据库的不同，管理JDBC驱动。</strong> </li>
+<li><strong>Connection接口：负责连接数据库并担任传送数据的任务。</strong> </li>
+<li><strong>Statement接口：由Connection产生，负责执行SQL语句。</strong> </li>
+<li><strong>ResultSet接口：负责保存Statement执行后所产生的查询结果。</strong> </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
       
@@ -702,7 +713,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.8k</span>
+    <span title="Site words total count">1.9k</span>
   
 </div>
 <!--
