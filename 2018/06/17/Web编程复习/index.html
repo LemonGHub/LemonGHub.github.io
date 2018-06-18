@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b26213959e04.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b2621395b222.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/06/17/5b26213949178.jpg">
-<meta property="og:updated_time" content="2018-06-18T01:59:08.915Z">
+<meta property="og:updated_time" content="2018-06-18T12:48:24.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web编程技术期末复习">
 <meta name="twitter:description" content="jdbc与jsp全称 jdbc 全称为 Java Database Connectivity jsp 全称为 Java Server Pages, Java服务端网页  Web服务器端开发技术 CGI、PHP、ASP、JSP  常用Web服务器 IIS、Apache、Tomcat、BEA WebLogic、JRun、Jboss服务器、IBM公司的WebSphere服务器">
@@ -347,7 +347,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-18T09:59:08+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-18T20:48:24+08:00">
                 2018-06-18
               </time>
             
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,213
+                  1,449
                 </span>
               
 
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  5
                 </span>
               
             </div>
@@ -484,7 +484,7 @@
 <h1 id="JSP-内置对象的作用范围"><a href="#JSP-内置对象的作用范围" class="headerlink" title="JSP 内置对象的作用范围"></a>JSP 内置对象的作用范围</h1><ul>
 <li><p><strong>request</strong></p>
 <ul>
-<li><strong>将属性保存在一次请求范围内，前提是必须使用服务器跳转\<a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a></strong> </li>
+<li><strong>将属性保存在一次请求范围内，前提是必须使用服务器跳转&lt; jsp:forward &gt;</strong> </li>
 </ul>
 <p><img src="https://i.loli.net/2018/06/17/5b26213959e04.jpg" alt="request"></p>
 </li>
@@ -523,6 +523,20 @@
 </li>
 </ul>
 <hr>
+<hr>
+<h1 id="———补充内容———"><a href="#———补充内容———" class="headerlink" title="———补充内容———"></a>———补充内容———</h1><hr>
+<ul>
+<li><p><strong>在JSP中如果要应用JSP提供的JavaBean的标签操作简单类，则此类必须满足如下的开发要求： </strong></p>
+<ol>
+<li><strong>所有的类必须放在一个包中，在Web中没有包的类是不存在的。</strong> </li>
+<li><strong>所有的类必须声明为public class，才能被外部所访问。–&gt;类名称与文件名一致。</strong></li>
+<li><strong>类中所有的属性必须封装，即使用private声明。</strong></li>
+<li><strong>封装的属性如果需要被外部所操作，则必须编写对应的setter、getter方法。 </strong></li>
+<li><strong>一个JavaBean中至少存在一个无参数构造方法，此方法为JSP中的标签所使用。</strong> </li>
+</ol>
+<p>注：<strong>如果在一个类中只包含了属性、setter、getter方法，那么这种类就称为简单JavaBean POJO（Plain Ordinary Java Object）简单Java对象<br>  VO(Value Object)与简单Java对象对应，专门用于传递值的操作上。<br>  TO(Transfers Object)传输对象 </strong></p>
+</li>
+</ul>
 
       
     </div>
@@ -710,7 +724,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jdbc与jsp全称"><span class="nav-number">1.</span> <span class="nav-text">jdbc与jsp全称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web服务器端开发技术"><span class="nav-number">2.</span> <span class="nav-text">Web服务器端开发技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用Web服务器"><span class="nav-number">3.</span> <span class="nav-text">常用Web服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web编辑工具"><span class="nav-number">4.</span> <span class="nav-text">Web编辑工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP内置对象"><span class="nav-number">5.</span> <span class="nav-text">JSP内置对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的四要素"><span class="nav-number">6.</span> <span class="nav-text">数据库的四要素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#静态包含和动态包含的区别"><span class="nav-number">7.</span> <span class="nav-text">静态包含和动态包含的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务器跳转与客户端跳转的区别"><span class="nav-number">8.</span> <span class="nav-text">服务器跳转与客户端跳转的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP开发环境搭载步骤"><span class="nav-number">9.</span> <span class="nav-text">JSP开发环境搭载步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP-内置对象的作用范围"><span class="nav-number">10.</span> <span class="nav-text">JSP 内置对象的作用范围</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#param操作"><span class="nav-number">11.</span> <span class="nav-text">param操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JDBC-应用程序接口"><span class="nav-number">12.</span> <span class="nav-text">JDBC 应用程序接口</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jdbc与jsp全称"><span class="nav-number">1.</span> <span class="nav-text">jdbc与jsp全称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web服务器端开发技术"><span class="nav-number">2.</span> <span class="nav-text">Web服务器端开发技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用Web服务器"><span class="nav-number">3.</span> <span class="nav-text">常用Web服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web编辑工具"><span class="nav-number">4.</span> <span class="nav-text">Web编辑工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP内置对象"><span class="nav-number">5.</span> <span class="nav-text">JSP内置对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的四要素"><span class="nav-number">6.</span> <span class="nav-text">数据库的四要素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#静态包含和动态包含的区别"><span class="nav-number">7.</span> <span class="nav-text">静态包含和动态包含的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务器跳转与客户端跳转的区别"><span class="nav-number">8.</span> <span class="nav-text">服务器跳转与客户端跳转的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP开发环境搭载步骤"><span class="nav-number">9.</span> <span class="nav-text">JSP开发环境搭载步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP-内置对象的作用范围"><span class="nav-number">10.</span> <span class="nav-text">JSP 内置对象的作用范围</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#param操作"><span class="nav-number">11.</span> <span class="nav-text">param操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JDBC-应用程序接口"><span class="nav-number">12.</span> <span class="nav-text">JDBC 应用程序接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#———补充内容———"><span class="nav-number">13.</span> <span class="nav-text">———补充内容———</span></a></li></ol></div>
             
 
           </div>
@@ -752,7 +766,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.9k</span>
+    <span title="Site words total count">2.1k</span>
   
 </div>
 <!--
