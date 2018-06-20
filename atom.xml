@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-19T06:20:01.932Z</updated>
+  <updated>2018-06-20T02:41:58.275Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统期末复习</title>
+    <link href="http://yoursite.com/2018/06/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2018/06/20/操作系统/</id>
+    <published>2018-06-20T02:39:41.000Z</published>
+    <updated>2018-06-20T02:41:58.275Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h4 id="1-操作系统的主要功能（5点）"><a href="#1-操作系统的主要功能（5点）" class="headerlink" title="1.操作系统的主要功能（5点）"></a>1.操作系统的主要功能（5点）</h4><ul><li>根据课本：1. 进程、线程与作业，2. 中断与处理器调度，2. 互斥、同步与通信，3. 死锁与饥饿，4.存储管理，5. 文件系统，6.设备与输入输出管理</li><li>根据百度：处理器管理、存储器管理、设备管理、文件管理、作业管理（来自百度百科）</li></ul><a id="more"></a><h4 id="2-什么是死锁？-P146-死锁产生的必要条件有哪些-（P147）"><a href="#2-什么是死锁？-P146-死锁产生的必要条件有哪些-（P147）" class="headerlink" title="2.什么是死锁？(P146) 死锁产生的必要条件有哪些?（P147）"></a>2.什么是死锁？(P146) 死锁产生的必要条件有哪些?（P147）</h4><ul><li>死锁：一组进程中的每个进程均等待此组进程中其他进程所占有的、因而永远无法继续向前推进，这种现象称为进程死锁，简称死锁。</li><li>死锁的必要条件：1. 资源独占，2. 不可剥夺，3. 保持申请，4.循环等待(注意: 当且仅当4个条件同时满足时，死锁才会发生)</li></ul><h4 id="3-进程有哪几种状态，画出进程的状态转换图（P28-P29图2-3）"><a href="#3-进程有哪几种状态，画出进程的状态转换图（P28-P29图2-3）" class="headerlink" title="3. 进程有哪几种状态，画出进程的状态转换图（P28~P29图2-3）"></a>3. 进程有哪几种状态，画出进程的状态转换图（P28~P29图2-3）</h4><ul><li><p>3种状态：运行态，就绪态，等待态</p></li><li><p>转换图如下</p><p><img src="https://s1.ax1x.com/2018/06/20/CzcyIe.png" alt="图2-3 进程间的基本状态转换关系"></p></li></ul><h4 id="4-进程与程序的联系与区别（P34-2-2-9）"><a href="#4-进程与程序的联系与区别（P34-2-2-9）" class="headerlink" title="4. 进程与程序的联系与区别（P34 2.2.9）"></a>4. 进程与程序的联系与区别（P34 2.2.9）</h4><ul><li>联系<ul><li>程序时构成进程的组成部分之一，一个进程存在的目的就是执行其所对应的程序。如果没有程序，进程就失去了其存在的意义。</li></ul></li><li>区别<ol><li>程序是静态的，而进程则是动态的。</li><li>程序可以写在纸上或在某种存储介质上长期保存，而进程具有生命周期，创建后存在，撤销后消亡。</li><li>一个程序可以对应多个进程，但是一个进程只能对用一个程序。</li></ol></li></ul><h4 id="5-段式存储与页式存储的管理的区别（P187）"><a href="#5-段式存储与页式存储的管理的区别（P187）" class="headerlink" title="5.段式存储与页式存储的管理的区别（P187）"></a>5.段式存储与页式存储的管理的区别（P187）</h4><ul><li>在页式存储管理中，分页对于用户是透明的，一个进程由若干个页构成，所有页的长度相同。</li><li>在段式存储管理中，分段对于用户是可见的，一个进程由若干个段构成，各个段的长度可以不同，一个段恰好对应一个程序单位。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简答题&quot;&gt;&lt;a href=&quot;#简答题&quot; class=&quot;headerlink&quot; title=&quot;简答题&quot;&gt;&lt;/a&gt;简答题&lt;/h2&gt;&lt;h4 id=&quot;1-操作系统的主要功能（5点）&quot;&gt;&lt;a href=&quot;#1-操作系统的主要功能（5点）&quot; class=&quot;headerlink&quot; title=&quot;1.操作系统的主要功能（5点）&quot;&gt;&lt;/a&gt;1.操作系统的主要功能（5点）&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;根据课本：1. 进程、线程与作业，2. 中断与处理器调度，2. 互斥、同步与通信，3. 死锁与饥饿，4.存储管理，5. 文件系统，6.设备与输入输出管理&lt;/li&gt;
+&lt;li&gt;根据百度：处理器管理、存储器管理、设备管理、文件管理、作业管理（来自百度百科）&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="复习总结" scheme="http://yoursite.com/categories/%E5%A4%8D%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="复习" scheme="http://yoursite.com/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+      <category term="操作系统" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>Web编程技术期末复习</title>
