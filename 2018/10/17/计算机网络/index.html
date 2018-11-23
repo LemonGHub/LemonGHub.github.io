@@ -510,7 +510,7 @@
 <ul>
 <li><p>电路交换的主要特点</p>
 <blockquote>
-<p>经过<strong>”建立连接</strong>（占用通信资源）–&gt; <strong>通话</strong>（一直占用通信资源） –&gt; <strong>释放连接</strong>（归还通信资源）“三个步骤的交换方式称为<strong>电路交换</strong>。使用电路交换来传送计算机数据时，其<strong>线路的传输效率往往很低</strong>，被用户占用的通信线路资源在绝大部分时间里都是空闲的。</p>
+<p>经过<strong>”建立连接</strong>（占用通信资源）—&gt; <strong>通话</strong>（一直占用通信资源） —&gt; <strong>释放连接</strong>（归还通信资源）“三个步骤的交换方式称为<strong>电路交换</strong>。使用电路交换来传送计算机数据时，其<strong>线路的传输效率往往很低</strong>，被用户占用的通信线路资源在绝大部分时间里都是空闲的。</p>
 </blockquote>
 </li>
 <li><p>分组交换的主要特点</p>
@@ -529,6 +529,7 @@
 </ul>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -555,6 +556,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li><p>位于网络边缘的主机和位于网络核心部分的路由器都是计算机，不一样的是，<strong>主机是为用户进行信息处理的</strong>，并且可以和其他主机通过网络交换信息。<strong>路由器则是用来转发分组的，即进行分组交换的。</strong></p>
 </li>
@@ -1420,6 +1422,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

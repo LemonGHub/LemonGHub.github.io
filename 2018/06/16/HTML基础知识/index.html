@@ -467,7 +467,7 @@
 <ul>
 <li>我们在浏览器的地址中输入的这个地址就是一个URL。</li>
 <li>URL格式<ul>
-<li><a href="http://127.0.0.1/index.html" target="_blank" rel="noopener">http://127.0.0.1/index.html</a><br><a href="http://127.0.0.1:80/index.html(完整格式)" target="_blank" rel="noopener">http://127.0.0.1:80/index.html(完整格式)</a></li>
+<li><a href="http://127.0.0.1/index.html" target="_blank" rel="noopener">http://127.0.0.1/index.html</a><br><a href="http://127.0.0.1:80/index.html(完整格式" target="_blank" rel="noopener">http://127.0.0.1:80/index.html(完整格式</a>)</li>
 </ul>
 </li>
 <li>URL拆分<ul>
@@ -512,7 +512,8 @@
 <li><p>HTML的整体框架</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>&lt;&gt;:开始标签<br>&lt;/&gt;:结束标签</li>
+<li><>:开始标签  
+</>:结束标签</li>
 <li>\<html>标签<ul>
 <li>作用：用于告诉浏览器这是一个网页，也就是说告诉浏览器我是一个HTML文档。</li>
 <li>注意点：其他所有标签都必须写在html标签里面，也就是写在html开始标签与结束标签里面。</li>
@@ -586,7 +587,7 @@
 </ul>
 </li>
 <li>双标签<ul>
-<li>有开始标签和结束标签，也就是由一个&lt;&gt;和一个&lt;/&gt;组成的</li>
+<li>有开始标签和结束标签，也就是由一个<>和一个</>组成的</li>
 </ul>
 </li>
 </ul>
@@ -1668,6 +1669,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

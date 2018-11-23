@@ -445,7 +445,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,588
+                  4,578
                 </span>
               
 
@@ -527,6 +527,7 @@
 <p><strong>先到先服务算法调度性能指标</strong> </p>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -569,6 +570,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  平均周转时间=29.67ms,平均带权周转时间=5.76ms。</p>
 <ul>
 <li><p><strong> 短作业优先算法（Shortest-Job-First，SJF）——作业</strong> </p>
@@ -580,6 +582,7 @@
 <p><strong>最短作业优先算法调度性能指标 </strong></p>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -631,6 +634,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  平均周转时间=13.25ms,平均带权等待时间=1.75ms。</p>
 <ul>
 <li><p><strong>最高响应比优先算法 （Highest-Response-Ration-Next，HRN） </strong></p>
@@ -654,6 +658,7 @@
 </li>
 </ul>
 <p>  <strong>循环轮转算法调度性能指标</strong> </p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -705,6 +710,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  平均周转时间=18.75ms，平均带权周转时间=3.33ms。</p>
 <h2 id="2-实时调度算法（EDF、RMS）"><a href="#2-实时调度算法（EDF、RMS）" class="headerlink" title="2. 实时调度算法（EDF、RMS）"></a>2. 实时调度算法（EDF、RMS）</h2><blockquote>
 <p><strong>需用公式进行判断</strong>，所需表格会提供</p>
@@ -717,6 +723,7 @@
 <p>例：表3-1给出两个周期性实时任务</p>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -744,6 +751,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  按最早截止期、可抢先原则调度的结果如图3-17所示 。</p>
 <p>   <img src="https://s1.ax1x.com/2018/06/20/CzWzc9.png" alt="CzWzc9.png"></p>
 <ul>
@@ -753,6 +761,7 @@
 <p><strong>表3-2 RMS上限值</strong> </p>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -795,8 +804,10 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  例：考虑表3-3所示的三个周期性实时任务。</p>
 <p>  <strong>表3-3 周期性实时任务</strong> </p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -823,6 +834,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>  由于<br>                  <img src="https://s1.ax1x.com/2018/06/20/CzfWHx.png" alt="img"><br>  因而可知RMS能够满足所有任务的调度要求。具体调度结果如图3-18所示。<br>               <img src="https://s1.ax1x.com/2018/06/20/Czf4UK.png" alt="img"></p>
 <p>   从CPU利用率来说，RMS算法不及EDF算法效率高，但具有如下优势：<br>  (1)RMS是非抢占式的，实现简单；<br>  (2)二者效率相差并不十分明显，对于具体任务集合来说，处理机利用率常可达到90%左右。</p>
 <p>  作业：P79 32题</p>
@@ -843,9 +855,9 @@
 <p><img src="https://s1.ax1x.com/2018/06/20/CzhiKs.png" alt="img"></p>
 <p><strong>例：设系统中有三个资源类{A,B,C}。R={A(10),B(5),C(7)}；P={p0,p1,p2,p3,p4}。</strong></p>
 <p>   <img src="https://s1.ax1x.com/2018/06/20/Czhkbq.png" alt="img"></p>
-<p><strong>安全进程序列：&lt;p1,p3,p4,p2,p0&gt;<br>  p1请求：Request[1]=(1,0,2),假定分配：</strong></p>
+<p><strong>安全进程序列：<p1,p3,p4,p2,p0><br>  p1请求：Request[1]=(1,0,2),假定分配：</p1,p3,p4,p2,p0></strong></p>
 <p>   <img src="https://s1.ax1x.com/2018/06/20/Czh2Rg.png" alt="img"></p>
-<p><strong> 安全进程序列：&lt;p1,p3,p4,p2,p0&gt;</strong></p>
+<p><strong> 安全进程序列：<p1,p3,p4,p2,p0></p1,p3,p4,p2,p0></strong></p>
 <p><strong> 若在上面新的状态下:<br> p4请求：Request[4]=(3,3,0), 不能满足，等待；<br> p0请求：Request[0]=(0,2,0), 不安全，等待。</strong></p>
 <p><img src="https://s1.ax1x.com/2018/06/20/CzhRzQ.png" alt="img"></p>
 <p><strong>例：银行家算法的保守性。R={A,B}, 申请a, b; 释放a, b</strong><br><strong>P={p1,p2}, p1: a b a b;   p2:b b b a b a ,假定某时刻系统状态如下:</strong></p>
@@ -875,7 +887,7 @@
 <li><p><strong>置换算法(replacement algorithm) </strong></p>
 <p><strong>用于：页淘汰、段淘汰、快表淘汰。 Objective: lowest page-fault rate.</strong></p>
 <p><strong>例：有如下页面访问序列： </strong><br>   <strong> 6, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 6, 0, 1</strong><br><strong>假定内存为该进程分配3个物理页架，开始时内存页架为空。</strong> 　</p>
-<p><strong>(1)最佳淘汰算法(OPT–optimal) 淘汰将来最长时间以后才用到的。<br>  效率最高，not feasible。</strong></p>
+<p><strong>(1)最佳淘汰算法(OPT—optimal) 淘汰将来最长时间以后才用到的。<br>  效率最高，not feasible。</strong></p>
 <p><img src="https://s1.ax1x.com/2018/06/20/Cz5KBR.png" alt="img"></p>
 <p> <strong>缺页故障次数为9。</strong></p>
 <p><strong>(2)先进先出(FIFO) 淘汰最先调入的。<br>  实现：队列，将所有页面按照进入内存的次序排成一个队列，当一个页面由外存调入内存时排入队尾，调入时间最早的页面被淘汰。</strong><br>  <strong>依据: 先进入的可能已经使用完毕。<br>  negative case: 有些代码和数据可能整个程序运行中用到。</strong></p>
@@ -1773,6 +1785,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

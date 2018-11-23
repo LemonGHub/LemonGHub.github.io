@@ -555,6 +555,7 @@
 <h4 id="7-例举什么是死锁，常用的死锁有哪些解决方案，简述你所了解的SQL-SERVER对死锁的解决方案"><a href="#7-例举什么是死锁，常用的死锁有哪些解决方案，简述你所了解的SQL-SERVER对死锁的解决方案" class="headerlink" title="7. 例举什么是死锁，常用的死锁有哪些解决方案，简述你所了解的SQL SERVER对死锁的解决方案"></a>7. 例举什么是死锁，常用的死锁有哪些解决方案，简述你所了解的SQL SERVER对死锁的解决方案</h4><ul>
 <li>死锁：如果事务T1封锁了数据R1,T2封锁了数据R2,然后T1又请求封锁R2,因T2已封锁了R2,于是T1等待T2释放R2上的锁。接着T2又申请封锁R1,因T1已封锁了R1,T2也只能等待T1释放R1上的锁。如下图所示。这样就出现了T1在等待T2,而T2又在等待T1的局面,T1和T2两个事务永远不能结束,形成死锁。 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -589,6 +590,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li><p>防止死锁的发生其实就是要破坏产生死锁的条件。预防死锁通常有两种方法:</p>
 <p> ①一次封锁法：要求每个事务必须一次将所有要使用的数据全部加锁,否则就不能继续执行。</p>
@@ -1434,6 +1436,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
